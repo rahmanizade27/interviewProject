@@ -1,0 +1,30 @@
+<form action="">
+  <div class="login">
+    <p>Sign Up</p>
+    <div class="formGroup">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        formControlName="username"
+        [ngClass]="{ class: true }"
+      />
+      <!-- <div></div> -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        [ngClass]="{ class: true }"
+      />
+      <label for="password">Confrim Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        [ngClass]="{ class: true }"
+      />
+    </div>
+  </div>
+  <div class="formGroup">
+    <button [disabled]="" class="signupbtn">Sign Up</button>
+    <button id="regBtn" routerLink="/login" class="btn btn-link">Login</button>
+  </div>
+</form>

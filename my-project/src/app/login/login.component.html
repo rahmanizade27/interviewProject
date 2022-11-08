@@ -1,0 +1,26 @@
+<form action="">
+  <div class="login">
+    <p>Login Page</p>
+    <div class="formGroup">
+      <label for="username">Username</label>
+      <input
+        type="text"
+        formControlName="username"
+        [ngClass]="{ class: true }"
+      />
+      <!-- <div></div> -->
+      <label for="password">Password</label>
+      <input
+        type="password"
+        formControlName="password"
+        [ngClass]="{ class: true }"
+      />
+    </div>
+  </div>
+  <div class="formGroup">
+    <button [disabled]="" class="loginbtn">Login</button>
+    <button id="regBtn" routerLink="/login/register" class="btn btn-link">
+      Register
+    </button>
+  </div>
+</form>
